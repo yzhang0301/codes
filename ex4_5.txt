@@ -1,0 +1,21 @@
+url = 'https://raw.githubusercontent.com/yzhang0301/codes/master/chow.jpg'
+img_wzj = imread(url)
+points=detect_keypoints(img_wzj)
+img_girl_with_points=draw_points(img_wzj,points)
+fig()+image(img_wzj)
+fig()+image(img_girl_with_points)
+
+mouth_left = points[48]
+mouth_right = points[54]
+left_eyebrow = points[19]
+right_eyebrow = points[24]
+
+warp_params = [
+    [left_eyebrow, (0, -5), 35],
+    [right_eyebrow, (0, -5), 35],
+    [mouth_left, (-5, -5), 40],
+    [mouth_right, (5, -5), 40]
+]
+
+sticker = make_sticker(img_wzj, warp_params)
+fig() + gif(sticker)
