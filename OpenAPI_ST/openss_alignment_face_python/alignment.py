@@ -11,12 +11,12 @@ import requests
 from openss import utils
 
 # Authentication token request url
-token_url = "http://open.ss.sensetime.com/api/common/v1/token"
+token_url = "http://open.study.sensetime.com/api/common/v1/token"
 # Facial keypoints detect request url
-alignment_url = "http://open.ss.sensetime.com/api/internal_sdk/v1/alignment"
+alignment_url = "http://open.study.sensetime.com/api/internal_sdk/v1/alignment"
 # API calling access key
-ACCESS_KEY_ID = "your Access Key Id";
-ACCESS_KEY_SECRET = "your Access Key Secret";
+ACCESS_KEY_ID = "ZS3jAnJ3gk0rT3dj";
+ACCESS_KEY_SECRET = "sRhnCCrgpXnCusU8SBPVZKgIn6OMNAJM";
 # Image resource
 file_name = "source_image.jpeg"
 file_path = os.path.join(".", file_name)
