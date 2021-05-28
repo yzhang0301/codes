@@ -8,12 +8,12 @@ import os
 
 import requests
 
-from openss import utils
+import utils
 
 # Authentication token request url
-token_url = "http://open.study.sensetime.com/api/common/v1/token"
+token_url = "https://open.study.sensetime.com/api/common/v1/token"
 # Facial keypoints detect request url
-alignment_url = "http://open.study.sensetime.com/api/internal_sdk/v1/alignment"
+alignment_url = "https://open.study.sensetime.com/api/internal_sdk/v1/alignment"
 # API calling access key
 ACCESS_KEY_ID = "ZS3jAnJ3gk0rT3dj";
 ACCESS_KEY_SECRET = "sRhnCCrgpXnCusU8SBPVZKgIn6OMNAJM";
@@ -33,7 +33,7 @@ else:
     # request headers
     headers = {"languageType": "zh_CHS", "X-Authorization": token}
     # request parameters
-    params = {"rotateDegree": 0, "modelType": 0, "isResponseImageRequired": False}
+    params = {"rotateDegree": 0, "modelType": 0, "isResponseImageRequired": True}
 
     use_binary = False
 
