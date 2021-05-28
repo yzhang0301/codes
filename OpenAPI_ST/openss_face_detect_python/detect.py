@@ -8,15 +8,15 @@ import os
 
 import requests
 
-from openss import utils
+import utils
 
 # Authentication token request url
-token_url = "http://open.ss.sensetime.com/api/common/v1/token"
+token_url = "https://open.study.sensetime.com/api/common/v1/token"
 # Image face fetection request url
-url = "http://open.ss.sensetime.com/api/internal_sdk/v1/detect/face"
+url = "https://open.study.sensetime.com/api/internal_sdk/v1/detect/face"
 # API calling access key
-ACCESS_KEY_ID = "your Access Key Id";
-ACCESS_KEY_SECRET = "your Access Key Secret";
+ACCESS_KEY_ID = "ZS3jAnJ3gk0rT3dj";
+ACCESS_KEY_SECRET = "sRhnCCrgpXnCusU8SBPVZKgIn6OMNAJM";
 # Image resource
 file_name = "source_group.jpeg"
 file_path = os.path.join(".", file_name)
@@ -33,7 +33,7 @@ else:
     # request headers
     headers = {"languageType": "zh_CHS", "X-Authorization": token}
     # request parameters
-    params = {"modelType": 2,"isResponseImageRequired": False}
+    params = {"modelType": 2,"isResponseImageRequired": True}
 
     use_binary = True
 
