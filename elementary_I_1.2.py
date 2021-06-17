@@ -7,3 +7,5 @@ for i in range(1,15):
     detector = get_fruit_detector()
     objects_result = detect_fruit(detector, img)
     get_fruit_result(detector)
+    resulted_img = draw_rect(objects_result, img)
+    imshow(resulted_img)
