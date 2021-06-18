@@ -16,7 +16,7 @@ You could find the app by scanning the QR code:
 ## Step 3: Pair your SenseStorm with the App
 1. Open the App and select the tab for SenseStorm:
 
-![step 1](./support/app1.PNG)
+![step 1](./support/app1.png)
 
 2. Select the Network Configuration tool:
 
