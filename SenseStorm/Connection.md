@@ -1,14 +1,12 @@
 
 # Preparations
 
-## Step 1: Download the VNC Viewer on your laptop (Optional)
+## Step 1: Download the VNC Viewer on your laptop _(Optional)_
 You could find the download link over [here](https://www.realvnc.com/en/connect/download/viewer/windows/)
 
 Install the VNC viewer on your laptop and you should be ready to go!
 
-## Step 2: Download the SenseStorm Robot Assistant on your phone 
-_(optional if you have a phone with you)_
-
+## Step 2: Download the SenseStorm Robot Assistant on your smartphone 
 You could find the app by scanning the QR code:
 
 ![QR code](./support/vnc.png)
@@ -34,7 +32,7 @@ You could find the app by scanning the QR code:
 
 ![step 5](./support/app5.png)
 
-## Step 4: Control the SenseStorm over VNC
+## Step 4: Control the SenseStorm over VNC _(Optional)_
 1. Enter the IP in the top-up bar, typically as ***10.90.2.XXX***
 2. username: pi
 3. password: SenseStorm
