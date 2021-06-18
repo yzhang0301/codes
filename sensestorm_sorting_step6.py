@@ -44,24 +44,3 @@ while True:
     except:
         print(sys.exc_info())
         break
-
-'''
-#while True:
-frame = get_image()
-show_image(frame)
-color = get_frame_color(frame)
-print("color is: ", color)
-'''
-
-'''    
-    color = color_sensor.get_color()
-    print(color)
-    if color == 'Black':
-        pass
-    else:
-        convey_object[color][0]()
-        convey_object[color][1]()
-    sleep(1)
-'''
-
-#convey_short()
