@@ -7,7 +7,7 @@ def convey_short():
     sleep(2)
     
 def convey_long():
-    motor_belt.run_angle(0.5, 1.15)
+    motor_belt.run_angle(0.5, 1.2)
     sleep(3)
 
 def left_sort():
