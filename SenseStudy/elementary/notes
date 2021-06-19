@@ -1,0 +1,6 @@
+imgs_2.append(load_image_url('http://sensestudy-server/api/resource/public/accountstorage-objs/18ff97da-ead9-439d-82b5-deebcc29502a/test_panda/panda8.jpg'))
+
+print(type(imgs_2))
+print(len(imgs_2))
+imshow(imgs_2[0])
+imshow(imgs_2[1])
