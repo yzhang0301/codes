@@ -25,3 +25,9 @@ k=1
 b=1
 pred_y = linear_function(x_try, k, b)
 fig() + scatter(x_try, pred_y) + line(x_try[:], pred_y[:], 'r')
+
+线性分类模型训练
+model = LogisticRegressor()
+model.train(train_x, train_y)
+weights = model.get_weights()
+print(weights)
