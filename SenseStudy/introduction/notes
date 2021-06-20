@@ -12,3 +12,9 @@ exfile.close()
 exfile = open('example_file2.txt')
 print(exfile.readlines())
 exfile.close()
+
+均方差
+true_y = [1,3,5,4]
+pred_y = [1,3,4,6]
+mse = compute_mse(true_y, pred_y)
+print(mse)
