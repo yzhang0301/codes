@@ -1,0 +1,14 @@
+import urllib.request
+import numpy as np
+x = urllib.request.urlopen('https://raw.githubusercontent.com/yzhang0301/codes/master/ex5_7.txt')
+str_list=x.read().decode("UTF-8").split('\r\n')
+print(str_list)
+
+讀寫文件，只在某一次運行期間有效，下一次文件消失
+exfile = open('example_file2.txt', 'w')
+exfile.write('This is example file 2 \n')
+#print(exfile)
+exfile.close()
+exfile = open('example_file2.txt')
+print(exfile.readlines())
+exfile.close()
