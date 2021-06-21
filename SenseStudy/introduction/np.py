@@ -15,6 +15,8 @@ sum3=np.sum(b)
 t5=time.time()
 print(t2-t1, t5-t4)
 
+#----------------------------------------------
+'''
 l = [1,2,3,4]
 print(l)
 arr1 = np.array([1,2,3,4])
@@ -37,3 +39,4 @@ print(l+l)
 a = np.array([1,2,3,4])
 print(a*2)
 print(a+a)
+'''
