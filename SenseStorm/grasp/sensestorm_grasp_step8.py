@@ -52,8 +52,12 @@ while True:
         frame = cv2.flip(frame, 1)
         gesture,location  =  detect_gesture(frame)
         print("gesture index is: ",gesture)
-        speak(gesture_list[int(gesture)])
         if gesture is not None:
+            if gesture == pre_gesture:
+                pass
+            else:
+                speak(gesture_list[int(gesture)])
+                pre_gesture = gesture
             x_center = (location[0] + location[2])/2
             print(x_center)
             location = [int(x) for x in location]
