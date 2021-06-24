@@ -46,6 +46,7 @@ def draw_label(frame, location, label):
     cv2.putText(frame, label, (location[0], label_ymin-7), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2) # Draw label text
 
 videostream = cv2.VideoCapture(0)
+pre_gesture = None
 while True:
     try:
         ret,frame = videostream.read()
