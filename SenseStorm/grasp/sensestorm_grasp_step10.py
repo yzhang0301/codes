@@ -79,7 +79,8 @@ while True:
 
     results = classify_image(interpreter, image)
     label_id, prob = results[0]
-    control_claw_state(label_id)
+    if round(prob,3) > 0.8:
+        control_claw_state(label_id)
 
     print(labels[label_id],prob,label_id)
     cv2.putText(crop_img,labels[label_id] + " " + str(round(prob,3)), (5,30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 1, cv2.LINE_AA)
