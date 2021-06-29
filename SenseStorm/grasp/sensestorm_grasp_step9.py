@@ -1,5 +1,3 @@
-from sensestorm import Motor, UltrasonicSensor
-from time import sleep
 from CourseHeader.utils.HandDetector import detect_gesture
 from CourseHeader.API import *
 
@@ -76,22 +74,25 @@ def move_arm_right():
 
 videostream = cv2.VideoCapture(0)
 previous_loc = 300
+pre_gesture = None
 while True:
     try:
         ret,frame = videostream.read()
         frame = cv2.flip(frame, 1)
         gesture,location  =  detect_gesture(frame)
         print("gesture index is: ",gesture)
-        speak(gesture_list[int(gesture)])
         if gesture is not None:
             x_center = (location[0] + location[2])/2
             print(x_center)
             control_claw_state(gesture)
             control_claw_location(x_center, gesture, previous_loc)
             previous_loc = x_center
- 
+            if pre_gesture == gesture:
+                pass
+            else:
+                speak(gesture_list[int(gesture)])
+                pre_gesture = gesture
             location = [int(x) for x in location]
-
             draw_bounding_box(frame, location)
             draw_label(frame, location, str(gesture))
             time.sleep(0.1)
