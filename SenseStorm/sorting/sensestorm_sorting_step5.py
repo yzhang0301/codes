@@ -1,3 +1,5 @@
+from CourseHeader.API import *
+
 motor_belt = Motor("A")
 motor_sort = Motor("B")
 color_sensor = ColorSensor("1")
