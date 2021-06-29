@@ -1,5 +1,3 @@
-from sensestorm import Motor, UltrasonicSensor
-from time import sleep
 from CourseHeader.utils.HandDetector import detect_gesture
 from CourseHeader.API import *
 
