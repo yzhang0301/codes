@@ -1,5 +1,3 @@
-from sensestorm import Motor, UltrasonicSensor
-from time import sleep
 motor_grab = Motor("D")
 
 global grab_flag
