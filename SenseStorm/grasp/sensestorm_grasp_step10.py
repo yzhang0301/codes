@@ -1,4 +1,8 @@
 from quantized_helper import load_tm2_model, classify_image, file_move
+import sys
+sys.path.append('/home/pi/Desktop/sensestorm_TM2_helper')
+import os
+os.chdir('/home/pi/Desktop/sensestorm_TM2_helper')
 import cv2
 from CourseHeader.API import show_image
 
