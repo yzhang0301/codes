@@ -15,5 +15,11 @@ def display_video():
     Thread(target=read_frame,args=(),daemon=True).start()
 
 display_video()
-colorlist = get_frame_color(frame)
-print(colorlist)
+while True:
+    try:
+        colorlist = get_frame_color(frame)
+        print(colorlist)
+    except:
+        break
+
+clean_up()
