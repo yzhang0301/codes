@@ -9,4 +9,5 @@ def convey_long():
     sleep(3)
 
 convey_short()
-#convey_long()
+sleep(3)
+convey_long()
