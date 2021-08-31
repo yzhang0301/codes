@@ -1,55 +1,41 @@
-from CourseHeader.API import *
+from threading import Thread
+import cv2
 
-motor_belt = Motor("A")
-motor_sort = Motor("B")
-color_sensor = ColorSensor("1")
+frame = None
+videostream = None
+def read_frame():
+    global frame,videostream
+    videostream = cv2.VideoCapture(-1)
+    while True:
+        ret,frame = videostream.read()
+        show_image(frame)
+def display_video():
+    Thread(target = read_frame, args = (), daemon = True).start()
 
-def convey_short():
-    motor_belt.run_angle(0.5, -0.6)
-    sleep(2)
-    
-def convey_long():
-    motor_belt.run_angle(0.5, -1.2)
-    sleep(3)
-
-def left_sort():
-    motor_sort.run_angle(0.5, -1.01)
-    sleep(2)
-
-def right_sort():
-    motor_sort.run_angle(0.5, 1)
-    sleep(2)
-
-def get_frame():
-    videostream = cv2.VideoCapture(0)
-    ret, frame = videostream.read()
-    frame = cv2.flip(frame, 1)
-    cv2.destroyAllWindows()
-    videostream.release()
-    return frame
-    
-convey_object = {
-    'Yellow': [convey_short, right_sort],
-    'Green': [convey_short, left_sort],
-    'Red': [convey_long, right_sort],
-    'Blue': [convey_long, left_sort]
-}
-
+display_video()
+   
 while True:
     try:
-        frame = get_frame()
-        show_image(frame)
         colorlist = get_frame_color(frame)
-            
         if colorlist is not None:
-            # convey_color(colorlist)
             color = colorlist[0]
-            if color == 'Black':
-                continue
-            else:
-                print(color,' is found!')
-                convey_object[color][0]()
-                convey_object[color][1]()
+            if color == "Black":
+                print("No color has been detected.")
+            else: 
+                print(color, "is found!")
+                if color == "Yellow":
+                    convey_short()
+                    right_sort()
+                elif color == "Green":
+                    convey_short()
+                    left_sort()
+                elif color == "Red":
+                    convey_long()
+                    right_sort()
+                elif color == "Blue":
+                    convey_long()
+                    left_sort()
     except:
-        print(sys.exc_info())
-        break
+        break                
+cv2.destroyAllWindows()
+videostream.release()
