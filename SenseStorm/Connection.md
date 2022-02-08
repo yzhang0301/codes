@@ -6,7 +6,7 @@
 ## Connect to local WiFi network: SSID: IoT  PW: eduhk+IoT+2018
 
 ```diff
-- text in red
+- SSID: IoT  PW: eduhk+IoT+2018
 + text in green
 ! text in orange
 # text in gray
