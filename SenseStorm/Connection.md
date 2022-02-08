@@ -5,6 +5,13 @@
 
 ## Connect to local WiFi network: SSID: IoT  PW: eduhk+IoT+2018
 
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+```
+
 ## Step 1: Download the "VNC Viewer" software on your laptop _(Optional)_
 You could find the download link over [here](https://www.realvnc.com/en/connect/download/viewer/windows/)
 
