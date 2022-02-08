@@ -44,6 +44,7 @@ You could find the app by scanning the QR code:
 ![step 5](./support/app5.png)
 
 ## Step 5: Control the SenseStorm over VNC _(Optional)_
+1. Click to open the "VNC viewer" software on your laptop
 1. Enter the IP in the top-up bar, typically as ***10.90.2.XXX***
 2. username: pi
 3. password: SenseStorm
