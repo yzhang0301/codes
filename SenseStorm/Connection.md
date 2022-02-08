@@ -1,17 +1,22 @@
 
 # Preparations
 
-## Step 1: Download the VNC Viewer on your laptop _(Optional)_
+## Step 1: Download the "VNC Viewer" software on your laptop _(Optional)_
 You could find the download link over [here](https://www.realvnc.com/en/connect/download/viewer/windows/)
 
-Install the VNC viewer on your laptop and you should be ready to go!
+Install the "VNC viewer" software on your laptop.
 
-## Step 2: Download the SenseStorm Robot Assistant on your smartphone 
+## Step 2: Download the "SenseTime Edu (PC Client)" software on your laptop
+You could find the download link over [here](https://hk.study.sensetime.com/download/)
+
+Install the "SenseTime Edu (PC Client)" software according to your operating system on your laptop (Windows or Mac OSX).
+
+## Step 3: Download the SenseStorm Robot Assistant on your smartphone 
 You could find the app by scanning the QR code:
 
 ![QR code](./support/vnc.png)
 
-## Step 3: Pair your SenseStorm with the App
+## Step 4: Pair your SenseStorm with the App
 1. Open the App and select the tab for SenseStorm:
 
 ![step 1](./support/app1.png)
@@ -32,7 +37,7 @@ You could find the app by scanning the QR code:
 
 ![step 5](./support/app5.png)
 
-## Step 4: Control the SenseStorm over VNC _(Optional)_
+## Step 5: Control the SenseStorm over VNC _(Optional)_
 1. Enter the IP in the top-up bar, typically as ***10.90.2.XXX***
 2. username: pi
 3. password: SenseStorm
