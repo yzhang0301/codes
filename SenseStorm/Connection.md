@@ -17,23 +17,25 @@ You could find the app by scanning the QR code:
 ![QR code](./support/vnc.png)
 
 ## Step 4: Pair your SenseStorm with the App
-1. Open the App and select the tab for SenseStorm:
+1. Coonect your smartphone to a local WiFi network.
+
+2. Open the App and select the tab for SenseStorm:
 
 ![step 1](./support/app1.png)
 
-2. Select the Network Configuration tool:
+3. Select the Network Configuration tool:
 
 ![step 2](./support/app2.png)
 
-3. Make sure your phone is connected to a WiFi, and input the WiFi password:
+4. Make sure your phone is connected to a WiFi, and input the WiFi password:
 
 ![step 3](./support/app3.png)
 
-4. Genarate a QR code and doulbe-click the mode-selection button of the SenseStorm, the camera of sensestorm should be ON, scan the QR code with the camera until the green light of the camera is OFF.
+5. Genarate a QR code and doulbe-click the mode-selection button of the SenseStorm, the camera of sensestorm should be ON, scan the QR code with the camera until the green light of the camera is OFF.
 
 ![step 4](./support/app4.png)
 
-5. You are ready to go with this IP returned!
+6. You are ready to go with this IP returned!
 
 ![step 5](./support/app5.png)
 
