@@ -17,7 +17,7 @@ You could find the app by scanning the QR code:
 ![QR code](./support/vnc.png)
 
 ## Step 4: Pair your SenseStorm with the App
-1. Coonect your smartphone to a local WiFi network.
+1. Connect your smartphone to a local WiFi network.
 
 2. Open the App and select the tab for SenseStorm:
 
